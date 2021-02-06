@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 public class Main {
-	static Scanner sc = new Scanner(System.in);
+	private static Scanner sc = new Scanner(System.in);
 	static  int choice;
 	static Library lib =new Library();
 	public static void main(String[] args) {
