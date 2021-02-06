@@ -5,8 +5,8 @@ bin-release/
 [Bb]in/
 
 # Other files and folders
-PracticeCode/.settings/
-PracticeCodes/bin/
+.settings/
+bin
 
 # Executables
 *.swf
