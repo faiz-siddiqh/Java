@@ -1,5 +1,7 @@
 package basicprograms;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class UniqueChar {
 	static int No_of_char=256;
@@ -42,22 +44,29 @@ public class UniqueChar {
     Scanner sc=new Scanner(System.in);
     System.out.println("Enter the sentence:");
     String str=sc.nextLine();
-    //String regex="[1-9]";
-    if (!((str.charAt(0) >= 'a' && str.charAt(0) <= 'z') 
-            || (str.charAt(0)>= 'A' && str.charAt(0) <= 'Z') 
-            || str.charAt(0) == '_')){
-    	System.out.println("Invalid sentence");
+    String regex="^[a-zA-Z ]*$";
+//    if (!((str.charAt(0) >= 'a' && str.charAt(0) <= 'z') 
+//            || (str.charAt(0)>= 'A' && str.charAt(0) <= 'Z') 
+//            || str.charAt(0) == '_')){
+//    	System.out.println("Invalid sentence");
+//    	return;
+//    }
+//    
+//    for(int i=1;i<str.length();i++) {
+//    	 if (((str.charAt(i) >= '0' && str.charAt(i) <= '9') 
+//    	            || str.charAt(i) == '_')) {
+//    		 System.out.println("Invalid sentence");
+//    	 return;
+//    	 }
+//    } 
+    
+    Pattern p=Pattern.compile(regex);
+    Matcher m=p.matcher(str);
+    
+    if(!m.matches()) {
+    	System.out.println("Invalid Sentence");
     	return;
     }
-    
-    for(int i=1;i<str.length();i++) {
-    	 if (((str.charAt(i) >= '0' && str.charAt(i) <= '9') 
-    	            || str.charAt(i) == '_')) {
-    		 System.out.println("Invalid sentence");
-    	 return;
-    	 }
-    } 
-    
     
     printDistinct(str);
    if(flag ==true) {

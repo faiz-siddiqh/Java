@@ -42,3 +42,5 @@ public class ArrayCopy {
 //	 arr1=arr.clone();// System.out.println("Displaying elements of original array " );
 //	   System.out.print( arr1[j] +" " );
 //	 }
+
+
