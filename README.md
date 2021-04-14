@@ -12,7 +12,7 @@ This repository contains solutions to hundreds of basic programs and answers of 
 
 ## Contribute
 
-.I would love to have your feedback and appreciation.
+I would love to have your feedback and appreciation.
 
 
 Kfasid@protonmail.com
