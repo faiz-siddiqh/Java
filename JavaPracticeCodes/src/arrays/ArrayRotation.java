@@ -2,9 +2,8 @@ package arrays;
 
 /**
  * 
- * @author Faiz-Siddiqh 
- * 		Write a program to rotate an array ,given the number of
- *      rotations/shifts .
+ * @author Faiz-Siddiqh Write a program to rotate an array ,given the number of
+ *         rotations/shifts .
  *
  */
 class RotateArray {
@@ -25,6 +24,20 @@ class RotateArray {
 			arr[i] = arr[i + 1];
 		}
 		arr[i] = temp;
+	}
+
+	private void rightRotate(int[] arr, int rotateBy, int arrayLength) {
+
+		int i, temp;
+		temp = arr[arrayLength - 1];
+
+		for (i = arrayLength - 1; i > 0; i--) {
+
+			arr[i] = arr[i - 1];
+		}
+
+		arr[i] = temp;
+
 	}
 
 	void printArray(int[] arr) {
