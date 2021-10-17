@@ -16,7 +16,7 @@ public class Factorial {
 		int number = sc.nextInt(), fact = 1, i;
 
 		fact = factorial(number);
-		System.out.print("the factorial of " + number + "  is" + fact);
+		System.out.print("the factorial of " + number + "  is  :" + fact);
 //    for(i=1;i<n;i++) {
 //    	fact=fact*i;
 	}
