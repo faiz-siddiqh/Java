@@ -4,8 +4,10 @@ import java.util.Scanner;
 
 /**
  * 
- * @author Faiz-Siddiqh Implement a program to copy an array: 1)without using
- *         pre-existing library methods 2)using existing methods
+ * @author Faiz-Siddiqh 
+ * Implement a program to copy an array:
+ *  1)without using pre-existing library methods 
+ *  2)using existing methods
  */
 public class ArrayCopy {
 
@@ -29,14 +31,14 @@ public class ArrayCopy {
 //			// System.out.println("Displaying elements of original array " );
 //			System.out.print(k + " ");
 //		}
-		
+
 		printPattern(3);
 
 	}
 
 	public static void printPattern(int n) {
 		int print = 1;
-		for (int i = 0; i <=n; i++) {
+		for (int i = 0; i <= n; i++) {
 			for (int j = 0; j <= i; j++) {
 				System.out.print(print + " ");
 			}
